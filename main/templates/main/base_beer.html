@@ -1,0 +1,23 @@
+{% extends 'main/leyout.html' %}
+
+{% load static %}
+
+{% block title %}{{  title }}{% endblock %}
+
+{% block content %}
+    <div class='features'>
+        <link rel="stylesheet" type="text/css" href={% static "/main/css/normalize.css"%}>
+        <h1>{{ title }}</h1>
+
+            <a href="{% url 'farmhouse_ale' %}"button type="button" class="btn btn-secondary" >Farmhouse Ale</a>
+            <a href="{% url 'bavarian_weizen' %}"button type="button" class="btn btn-secondary" >Bavarian Weizen</a>
+            <a href="{% url 'apa' %}"button type="button" class="btn btn-secondary" >A.P.A.</a>
+            <a href="{% url 'ipa' %}"button type="button" class="btn btn-secondary" >I.P.A.</a>
+            <a href="{% url 'dipa' %}"button type="button" class="btn btn-secondary" >D.I.P.A.</a>
+            <a href="{% url 'cherry_ale' %}"button type="button" class="btn btn-secondary" >Cherry Ale</a>
+            <a href="{% url 'dark_lager' %}"button type="button" class="btn btn-secondary" >Dark lager</a>
+            <a href="{% url 'apple_cider' %}"button type="button" class="btn btn-secondary" >Apple Cider</a>
+        </div>
+
+    </div>
+{% endblock %}

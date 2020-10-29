@@ -1,0 +1,553 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Главный окно в котором
+содержится весь остольной контент */
+
+
+
+.main_page{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	/*background: url(dors_background_3.png);*/
+}
+
+/* footer */
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 7.5%;
+	background-color: #d6b772;
+	color: white;
+	text-align: center;
+}
+
+/* Левая панель */
+
+.main_page .left_navigation{
+	width: 20%;
+	height: 100vh;
+	background: #021d39#021d39;
+	transform: translateX(-220px); 
+	transition: 1s ease all;
+	position: fixed;
+
+}
+
+.main_page .left_navigation:hover{
+	width: 20%;
+	height: 100vh;
+	background: #021d39;	
+	transform: translateX(0px);
+
+}
+
+
+
+/* Лого */
+
+.main_page .left_navigation .logo{
+	min-width: 40px;
+	min-height: 200px;
+	position: fixed;
+
+}
+
+
+/* Левый подтекст под лого */
+
+.nav_text{
+	font-size: 30px;
+	color: white;
+	top: 215px;
+	position: fixed;
+	font-weight: bold ;
+	left: 20%;
+}
+
+/* Левый меню */
+
+.main_page .left_navigation .nav_menu{
+	width: 100%;
+	height: 70%;
+
+}
+
+.left_menu_list{
+	top: 175px;
+	position: fixed;
+	left: 20%;
+	margin-top: 70px;
+
+}
+
+.left_menu_list > ul > li{
+	list-style: none;
+	margin: 10px;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+
+.left_menu_list > ul >li > a{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.left_menu_list > ul >li > a:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #eb7443;
+	width: 0%;
+	height: 2px;
+	transition: 0.4s;
+
+}
+
+.left_menu_list > ul >li > a:hover::before{
+	content: "";
+	width: 100%;
+	color: #eb7443;
+
+}
+
+.left_menu_list > ul >li > a:hover{
+		color: #eb7443;
+}
+
+/* Правый информационный контент */
+
+.main_page .right_content{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.features {
+    position: flex;
+	text-align: center;
+	transform: translateY(-800px);
+	width: 75%;
+	margin:auto;
+}
+
+.contact_form {
+	position: relative;
+	left: 250px;
+	text-align: center;
+	transform: translateY(-800px);
+	width: 75%;
+	margin:auto;
+}
+
+.contact_body {
+	background-image: url("/main/static/main/img/dors_map.jpg");
+}
+
+
+
+.typewriter h5 {
+  border-right: .15em solid orange;
+  font-family: "Times New Roman";
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typewriter h5:nth-child(1) {
+  width: 30em;
+  -webkit-animation: type 500ms steps(40,end);
+  animation: type 1s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(2) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type2 500ms steps(40, end);
+  animation: type2 1s steps(40, end);
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(3) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type3 500ms steps(40, end);
+  animation: type3 1s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(4) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type4 500ms steps(40, end);
+  animation: type4 1s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(5) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type5 500ms steps(40, end);
+  animation: type5 1s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(6) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type5 500ms steps(40, end);
+  animation: type6 1s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(7) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type7 500ms steps(40, end);
+  animation: type7 1s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(8) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type8 500ms steps(40, end);
+  animation: type8 1s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h5:nth-child(9) {
+  width: 30em;
+  opacity: 0;
+  -webkit-animation: type9 500ms steps(40, end);
+  animation: type9 1s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type4 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type4 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type5 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type5 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+
+@keyframes type6 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type6 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+
+@keyframes type7 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type7 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type8 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type8 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type9 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type9 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+}Resources

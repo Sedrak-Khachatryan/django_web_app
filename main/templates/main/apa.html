@@ -1,0 +1,38 @@
+{% extends 'main/leyout.html' %}
+
+{% load static %}
+
+{% block title %}{{  title }}{% endblock %}
+
+{% block content %}
+    <div class='features'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <h1>{{ title }}</h1>
+
+        <div  class="btn-group" role="group" aria-label="Basic example">
+            <a href="{% url 'farmhouse_ale' %}"button type="button" class="btn btn-secondary" >Farmhouse Ale</a>
+            <a href="{% url 'bavarian_weizen' %}"button type="button" class="btn btn-secondary" >Bavarian Weizen</a>
+            <a href="{% url 'apa' %}"button type="button" class="btn btn-secondary" >A.P.A.</a>
+            <a href="{% url 'ipa' %}"button type="button" class="btn btn-secondary" >I.P.A.</a>
+            <a href="{% url 'dipa' %}"button type="button" class="btn btn-secondary" >D.I.P.A.</a>
+            <a href="{% url 'cherry_ale' %}"button type="button" class="btn btn-secondary" >Cherry Ale</a>
+            <a href="{% url 'dark_lager' %}"button type="button" class="btn btn-secondary" >Dark lager</a>
+            <a href="{% url 'apple_cider' %}"button type="button" class="btn btn-secondary" >Apple Cider</a>
+        </div>
+        <div class="dipa_img">
+                <img src={% static "main/img/dipa.jpg"%}  >
+                <div style="position: relative; width: 600px; height: 300px; left: 500px; top: -550px;">
+                <div class="typewriter">
+                    <h5>Wheat beer is a beer , usually top-fermented ,</h5>
+                    <h5>which  is brewed with  a large  proportion  of</h5>
+                    <h5>wheat relative to the amount of malted barley.</h5>
+                    <h5>The two main varieties are Weißbier , based on</h5>
+                    <h5>the German tradition , and Witbier ,  based on</h5>
+                    <h5>the  Belgian  tradition ; other types  include</h5>
+                    <h5>Lambic ( made with wild yeasts and bacteria ),</h5>
+                    <h5>Berliner  Weisse ( a cloudy, sour beer ) , and</h5>
+                    <h5>Gose (a German-type sour, salty, herbal beer).</h5>
+                </div>
+                </div>
+    </div>
+{% endblock %}

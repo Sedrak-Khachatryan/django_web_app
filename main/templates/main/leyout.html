@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<link rel="stylesheet" type="text/css" href={% static "/main/css/normalize.css" %}>
+	<script src={% static "main/js/classie.js" %}></script>
+		<script src={% static "main/js/gnmenu.js" %}></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	<script src="main/static/main/js/modernizr.custom.js"></script>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>{% block title %}{% endblock %}</title>
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-download" href="{% url 'home' %}">Home Page</a>
+
+								</li>
+								<li><a class="gn-icon gn-icon-cog"href="{% url 'craft_beer' %}">Craft Beer</a></li>
+								<li><a class="gn-icon gn-icon-help"href="{% url 'kitchen' %}">Kitchen</a></li>
+								<li><a class="gn-icon gn-icon-help"href="{% url 'about' %}">About Us</a></li>
+								<li><a class="gn-icon gn-icon-help"href="{% url 'contact_us' %}">Contact Us</a></li>
+
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a href="https://www.facebook.com/dors.craftbeerandkitchen/">facebook</a></li>
+				<li><a class="codrops-icon codrops-icon-prev" href="https://www.instagram.com/dors.craftbeerandkitchen/"><span>instagram</span></a></li>
+				<li><a class="codrops-icon codrops-icon-drop" href="https://www.tripadvisor.com/Restaurant_Review-g293932-d17848456-Reviews-Dors_craft_beer_kitchen-Yerevan.html"><span>tripadvisor</span></a></li>
+			</ul>
+
+
+		</div><!-- /container -->
+		<script src="main/ststic/main/js/classie.js"></script>
+		<script src="main/static/main/js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	<main>
+
+        {% block content %}
+
+        {% endblock %}
+    </main>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'main/index1.html' %}
+{% load static %}
+
+{% block title %}{{  title }}{% endblock %}
+
+{% block content %}
+
+    <div class='features_index'>
+        <hr>
+        <h1>{{ title }}</h1>
+        <hr>
+        {% for el in news %}
+            <div >
+                <h3>{{ el.title }}</h3>
+                <img src="{{ el.img.url }}" width="60%" height="60%" >
+                <h5>{{ el.description }}<br/>{{ value|linebreaks }}</h5>
+                <h8>{{ el.date }}</h8>
+                <hr>
+            </div>
+
+        <table border="1px" width="1px" height="100px"></table>
+        {% endfor %}
+
+    </div>
+
+    <div class="background_kitchen"></div>
+
+{% endblock %}
+

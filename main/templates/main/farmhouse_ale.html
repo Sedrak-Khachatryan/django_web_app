@@ -1,0 +1,42 @@
+{% extends 'main/leyout.html' %}
+
+{% load static %}
+
+{% block title %}{{  title }}{% endblock %}
+
+{% block content %}
+    <div class='features'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <h1>{{ title }}</h1>
+
+        <div  class="btn-group" role="group" aria-label="Basic example">
+            <a href="{% url 'farmhouse_ale' %}"button type="button" class="btn btn-secondary" >Farmhouse Ale</a>
+            <a href="{% url 'bavarian_weizen' %}"button type="button" class="btn btn-secondary" >Bavarian Weizen</a>
+            <a href="{% url 'apa' %}"button type="button" class="btn btn-secondary" >A.P.A.</a>
+            <a href="{% url 'ipa' %}"button type="button" class="btn btn-secondary" >I.P.A.</a>
+            <a href="{% url 'dipa' %}"button type="button" class="btn btn-secondary" >D.I.P.A.</a>
+            <a href="{% url 'cherry_ale' %}"button type="button" class="btn btn-secondary" >Cherry Ale</a>
+            <a href="{% url 'dark_lager' %}"button type="button" class="btn btn-secondary" >Dark lager</a>
+            <a href="{% url 'apple_cider' %}"button type="button" class="btn btn-secondary" >Apple Cider</a>
+        </div>
+        </div>
+            <div class="farmhouse_img">
+                <img src={% static "main/img/farmhouse.jpg"%}  >
+                <div style="position: relative; width: 600px; height: 300px; left: 780px; top: -700px;">
+                <div class="typewriter">
+                    <h5>Farmhouse ale is an ancient European tradition where</h5>
+                    <h5>farmers brewed beer for consumption on the farm from</h5>
+                    <h5>their own grain. Most farmers would brew for Christmas</h5>
+                    <h5>and/or the late summer work, but in areas where they had</h5>
+                    <h5>enough grain farmers would use beer as the every-day</h5>
+                    <h5>drink.This was in a time  when it was safer to</h5>
+                    <h5>drink beer than water.Farmhouse ale has enormous</h5>
+                    <h5>variation in the ingredients and brewing process used,</h5>
+                    <h5>both of which follow ancient local traditions.</h5>
+
+
+                </div>
+                </div>
+    </div>
+    </div>
+{% endblock %}

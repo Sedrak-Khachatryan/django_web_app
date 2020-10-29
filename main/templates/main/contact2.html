@@ -1,0 +1,27 @@
+{% extends 'main/leyout.html' %}
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{% block content %}
+    <body>
+    <div class='map'>
+     <img src={%static "main/img/dors_map.jpg" %}/>
+    </div>
+    <div class='features_contact'>
+</head>
+
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+    </div>
+</body>
+</html>
+{% endblock %}
